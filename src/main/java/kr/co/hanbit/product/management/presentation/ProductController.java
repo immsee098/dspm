@@ -1,7 +1,6 @@
 package kr.co.hanbit.product.management.presentation;
 
 import kr.co.hanbit.product.management.application.SimpleProductService;
-import kr.co.hanbit.product.management.domain.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,9 +18,9 @@ public class ProductController {
     }
 
     @RequestMapping(value = "/products", method = RequestMethod.POST)
-    public Product createProduct(@RequestBody Product product) {
+    public ProductDto createProduct(@RequestBody ProductDto productDto) {
 
-        return simpleProductService.add(product);
+        return simpleProductService.add(productDto);
     }
 
 }

@@ -21,6 +21,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'com.h2database:h2'
+	// https://mvnrepository.com/artifact/org.modelmapper/modelmapper
+	implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.2.0'
+
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
