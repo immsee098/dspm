@@ -1,7 +1,10 @@
 package kr.co.hanbit.product.management;
 
+import kr.co.hanbit.product.management.application.SimpleProductService;
+import kr.co.hanbit.product.management.presentation.ProductDto;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.config.Configuration;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
